@@ -1,7 +1,7 @@
 jwt:
   expiration: 86400000
   issuer: dev-haha
-  secret: user-token-haha-hahaha
+  secret: user-token-dev
 
 gateway:
   ip: 39.118.84.160
