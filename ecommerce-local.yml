@@ -1,3 +1,11 @@
+mysql:
+  host: 127.0.0.1
+  port: 3306
+
+zipkin:
+  host: 127.0.0.1
+  port: 9411
+
 spring:
   config:
     activate:
@@ -11,7 +19,7 @@ spring:
         web-allow-others: true
   datasource:
     driver-class-name: com.mysql.cj.jdbc.Driver
-    url: jdbc:mysql://mysql:3306/example?serverTimezone=UTC&characterEncoding=UTF-8
+    url: jdbc:mysql://${mysql.host}:${mysql.port}/example?serverTimezone=UTC&characterEncoding=UTF-8
     username: root
     password: '{cipher}AQAirAuTZJgYdvdPUJGkHwCHE0VJFRIn8B7BlpYLeF+w22KtCcYF6DsOyOHeTDir5l2nZwGjv6DifyUmIhQRNy2bnKMkL6GjEebbaNiuppEuSvSC/BQOCoYgiDcS7evy6XBnC5WBysamv9R/ROVcYpAQPl8hsHwpX9OU7FU82Mdfj+SZLPdkp0mGxZot0V34tfUiFcpJBLThh+1hnE5LEsbggNZ03ZCXMo2LWNYNECuZ8NTotQz4nSyDZCEMlfhaznY4SYWLpZSsF0EE1iExrVc0v47bCehzIdOg9hs3t2gDz1S9iPXTlW6HvGl3yZIljZVE0za5ywguLVeCRwXj3ORREcLjISk3xWuMxzZE8ciOCWYZ6V3ddpfPxMvBeenUhSU='
     generate-unique-name: true
@@ -23,7 +31,7 @@ spring:
     defer-datasource-initialization: true
 
   zipkin:
-    base-url: http://127.0.0.1:9411
+    base-url: http://${zipkin.host}:${zipkin.port}
     enabled: true
   sleuth:
     sampler:
