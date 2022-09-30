@@ -1,0 +1,15 @@
+spring:
+  cloud:
+    config:
+      server:
+        git:
+          default-label: main
+          try-master-branch: false
+        # uri: https://github.com/ndy2/ecommerce-config.git
+          uri: file:///Users/deukyun/Desktop/study-with-code/study-spring-cloud/ecommerce/git-local-repo
+
+encrypt:
+  key-store:
+    location: classpath:/ecommerce.jks
+    password: 1q2w3e4r
+    alias: ecommerce
