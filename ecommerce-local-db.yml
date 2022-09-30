@@ -1,4 +1,4 @@
-sping:
+spring:
   config:
     activate:
       on-profile: local
