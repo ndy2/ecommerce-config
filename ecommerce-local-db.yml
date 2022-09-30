@@ -17,9 +17,11 @@ sping:
   jpa:
     generate-ddl: true
     open-in-view: false
+    show-sql: true
     hibernate:
       ddl-auto: create-drop
     defer-datasource-initialization: true
     properties:
       hibernate:
+        format_sql: true
         dialect: org.hibernate.dialect.MySQL5Dialect
