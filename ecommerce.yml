@@ -1,6 +1,5 @@
 spring:
   profiles:
-    default: local
     group:
       "local" : local
       "dev" : dev
