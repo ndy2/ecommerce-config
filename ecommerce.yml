@@ -5,4 +5,4 @@ spring:
       "local" : local
       "dev" : dev
       "prod" : prod
-      "local-product-service" : "local-actuator", "local-db", "local-eureka"
+      "local-product-service" : "actuator", "local-db", "local-eureka"
