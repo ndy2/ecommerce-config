@@ -12,7 +12,7 @@ sping:
     driver-class-name: com.mysql.cj.jdbc.Driver
     url: jdbc:mysql://localhost:3306/mydb?serverTimezone=UTC&characterEncoding=UTF-8
     username: root
-    password: '{cipher}AQAirAuTZJgYdvdPUJGkHwCHE0VJFRIn8B7BlpYLeF+w22KtCcYF6DsOyOHeTDir5l2nZwGjv6DifyUmIhQRNy2bnKMkL6GjEebbaNiuppEuSvSC/BQOCoYgiDcS7evy6XBnC5WBysamv9R/ROVcYpAQPl8hsHwpX9OU7FU82Mdfj+SZLPdkp0mGxZot0V34tfUiFcpJBLThh+1hnE5LEsbggNZ03ZCXMo2LWNYNECuZ8NTotQz4nSyDZCEMlfhaznY4SYWLpZSsF0EE1iExrVc0v47bCehzIdOg9hs3t2gDz1S9iPXTlW6HvGl3yZIljZVE0za5ywguLVeCRwXj3ORREcLjISk3xWuMxzZE8ciOCWYZ6V3ddpfPxMvBeenUhSU='
+    password: 
     generate-unique-name: true
   jpa:
     generate-ddl: true
