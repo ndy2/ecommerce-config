@@ -1,4 +1,8 @@
 sping:
+  config:
+    activate:
+      on-profile: local
+
   spring:
     init:
       mode: always
